@@ -33,13 +33,12 @@
   </div>
   
   {{ partial "footer.html" . }}
+
+  {{ partial "mathjax-markdown-solution.html" . }}
   
-  <script src="{{ "js/katex.min.js" | absURL }}"></script>
-  <script src="{{ "js/auto-render.min.js" | absURL }}"></script>
   <script src="{{ "js/highlight.min.js" | absURL }}"></script>
   <script>
     hljs.initHighlightingOnLoad();
-    renderMathInElement(document.body);
   </script>
   {{ partial "analytics.html" . }}
 </body>
